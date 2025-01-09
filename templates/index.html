@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма продукту</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+        <h2 class="text-center">Zaloguj się lub zarejestruj, aby zacząć korzystać z aplikacji.</h2>
+        <div class="text-center">
+            <a href="{{ url_for('login') }}" class="btn btn-custom">Zaloguj</a>
+            <a href="{{ url_for('register') }}" class="btn btn-custom">Zarejestruj</a>
+        </div>
+    {% endblock %}
+    
+</body>
+</html>
